@@ -72,7 +72,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: 'AWS-Cloud-3rd-Project/GitOpsDemo'
+          repository: 'youjins17/CD_TEST_yous'
           token: ${{ secrets.GITOPS_REPO_TOKEN }}
 
       # 아티팩트 다운로드
@@ -96,8 +96,8 @@ jobs:
       # 변경 사항 커밋 및 푸쉬
       - name: Commit and push changes
         run: |
-          git config --global user.email "qqw7820@gmail.com"
-          git config --global user.name "Vinca0121"
+          git config --global user.email "youjin1412s@gmail.com"
+          git config --global user.name "youjins17"
           git add values.yaml
           git commit -m "Update image tag to latest"
           git push
